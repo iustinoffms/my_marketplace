@@ -13,51 +13,53 @@
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Homepage</title>
     <style></style>
   </head>
 
-  <body class="p-2">
-    <header class="border-2 border-solid border-black p-2 flex items-center">
-      <div
-        class="logo-list-search border-2 border-solid border-red-600 flex items-center flex-auto justify-start"
-      >
+  <body class="body">
+    <header class="bg-[#666]">
+      <div class="logo-list-search flex">
         <!--left side of nav-->
-        <div class="logo">
-          <a href="./signup.html"> <img src="https://picsum.photos/100" /></a>
+
+        <!-- <a href="./signup.html"> <img src="https://picsum.photos/100" /></a> -->
+
+        <ul class="list flex h-full">
+          <li class="border-r border-solid border-white h-full flex items-center p-2">
+            <a href="#"><span> Products </span></a>
+          </li>
+          <li class="border-r border-solid border-white h-full flex items-center p-2">
+            <a href="#"><span> Contact </span></a>
+          </li>
+        </ul>
+
+        <div class="search-bar px-2 w-full flex items-center">
+          <label for="search "></label>
+          <input
+            type="search"
+            id="search"
+            placeholder="search bar here"
+            class="border border-solid border-slate-500 outline-none w-full rounded-lg"
+          />
         </div>
-        <div class="products-contact">
-          <ul class="list">
-            <li>
-              <a href="#"><span> Products </span></a>
-            </li>
-            <li>
-              <a href="#"><span> Contact </span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-bar">
-          <form>
-            <label for="search"></label>
-            <input
-              type="search"
-              id="search"
-              placeholder="search bar here"
-              class="border border-solid border-slate-500 outline-none"
-            />
-          </form>
-        </div>
-      </div>
-      <div class="account-cart border-2 border-solid border-red-600 flex items-center">
-        <!--rigth side of nav-->
-        <div class="account">
+        <div class="flex items-center">
           <a href=""><span class="material-icons"> person </span></a>
-        </div>
-        <div class="cart">
           <a href=""><span class="material-icons"> local_mall </span></a>
         </div>
       </div>
+      <!-- <div class="account-cart border-2 border-solid border-red-600 bg-red items-center">
+        
+      </div> -->
     </header>
+    <!-- <main>
+      <div class="carousel-container border-2 border-solid border-black">
+        <div>
+          <h1><a href="">Titlul principal al paginii</a></h1>
+        </div>
+        <button><a href="">Intra in Shop</a></button>
+      </div>
+    </main> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
