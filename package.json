@@ -1,0 +1,28 @@
+{
+  "name": "iustin-marketplace",
+  "version": "0.0.1",
+  "description": "Honey marketplace",
+  "scripts": {
+    "dev": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "serve": "cd src && npx reload -b -p 3000",
+    "build": "npx tailwindcss -i ./src/styles.css -o ./src/output.css",
+    "build:watch": "npm run build -- --watch",
+    "deploy": "npm run build && cd src && npx surge --domain https://iustinoff.surge.sh/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iustinoffms/my_marketplace.git"
+  },
+  "keywords": [],
+  "author": "Iustin Sanduleanu <iustinmsanduleanu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iustinoffms/my_marketplace/issues"
+  },
+  "homepage": "https://github.com/iustinoffms/my_marketplace#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "reload": "^3.2.0",
+    "tailwindcss": "^3.0.19"
+  }
+}
