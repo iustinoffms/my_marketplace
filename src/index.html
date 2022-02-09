@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="reset.css" rel="stylesheet" />
-    <link href="../dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <title>Homepage</title>
-    <style>
-      /* header {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="reset.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Homepage</title>
+  <style>
+    /* header {
         display: flex;
         justify-content: space-between;
       }
@@ -34,48 +30,44 @@
         align-items: center;
         justify-content: center;
       } */
-    </style>
-  </head>
-  <body class="p-24">
-    <header class="border-2 border-solid border-black p-2">
-      <div
-        class="logo-list-search border border-solid border-red-600 bg-blue-300 my-1.5"
-      >
-        <!--left side of nav-->
-        <div class="logo">
-          <a href="./signup.html"> <img src="https://picsum.photos/100" /></a>
-        </div>
-        <div class="products-contact">
-          <ul class="list">
-            <li>
-              <a href="#"><span> Products </span></a>
-            </li>
-            <li>
-              <a href="#"><span> Contact </span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-bar">
-          <form>
-            <label for="search"></label>
-            <input
-              type="search"
-              id="search"
-              placeholder="search bar here"
-              class="border border-solid border-slate-500 outline-none"
-            />
-          </form>
-        </div>
+  </style>
+</head>
+
+<body class="p-24 w-5/6">
+  <header class="border-2 border-solid border-black p-2">
+    <div class="logo-list-search border border-solid border-red-600 bg-blue-300 my-1.5">
+      <!--left side of nav-->
+      <div class="logo">
+        <a href="./signup.html"> <img src="https://picsum.photos/100" /></a>
       </div>
-      <div class="account-cart border border-solid border-blue-900 my-1.5">
-        <!--rigth side of nav-->
-        <div class="account">
-          <a href=""><span class="material-icons"> person </span></a>
-        </div>
-        <div class="cart">
-          <a href=""><span class="material-icons"> local_mall </span></a>
-        </div>
+      <div class="products-contact">
+        <ul class="list">
+          <li>
+            <a href="#"><span> Products </span></a>
+          </li>
+          <li>
+            <a href="#"><span> Contact </span></a>
+          </li>
+        </ul>
       </div>
-    </header>
-  </body>
+      <div class="search-bar">
+        <form>
+          <label for="search"></label>
+          <input type="search" id="search" placeholder="search bar here"
+            class="border border-solid border-slate-500 outline-none" />
+        </form>
+      </div>
+    </div>
+    <div class="account-cart border border-solid border-blue-900 my-1.5">
+      <!--rigth side of nav-->
+      <div class="account">
+        <a href=""><span class="material-icons"> person </span></a>
+      </div>
+      <div class="cart">
+        <a href=""><span class="material-icons"> local_mall </span></a>
+      </div>
+    </div>
+  </header>
+</body>
+
 </html>
