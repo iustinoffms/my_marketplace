@@ -50,7 +50,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <span class="material-icons cursor-pointer mr-4"> menu </span>
         <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
         <ul
-          class="divide-y divide-white menu-dropdown font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-y hover:divide-black h-full"
+          class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
         >
           <li class="px-4 flex items-center justify-center">
             <a href="./products.html">PRODUSE</a>
@@ -97,10 +97,22 @@ xl	1280px	@media (min-width: 1280px) { ... }
     </header>
     <main>
       <div
-        class="hero-section bg-[url('https://files.worldwildlife.org/wwfcmsprod/images/Mountains_New_Hero_Image/story_full_width/5c6n24n4pm_mountains_hero.jpg')] bg-no-repeat bg-center bg-cover text-white flex flex-col items-center justify-around gap-20"
+        class="w-full bg-[url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png')] bg-cover bg-center p-4 bg-no-repeat flex flex-col items-center justify-center gap-52"
       >
-        <h1 class="hero-title">Produse cu mândrie în Iași</h1>
-        <button>Vezi produse</button>
+        <h1
+          class="border border-solid text-black text-base font-black w-full text-center md:text-2xl"
+        >
+          <a href="./products.html">PRODUSE CU MÂNDRIE ÎN IAȘI</a>
+        </h1>
+        <div class="btn-container h-20 w-40 flex items-center justify-center">
+          <a href="./products.html"
+            ><button
+              class="hero-action-btn rounded p-2 bg-neutral-700 text-white text-sm hover:bg-white hover:text-black hover:shadow-2xl shadow-xl hover:ease-in duration-100 font-bold"
+            >
+              Vezi produse
+            </button></a
+          >
+        </div>
       </div>
     </main>
   </body>
