@@ -17,29 +17,91 @@
 
     <title>Homepage</title>
     <style>
-      /* .header {
-        display: flex;
-        justify-content: space-between;
+      body {
+        font-family: "Lato", sans-serif;
+        border: 2px solid salmon;
+      }
+      /* .carousel {
+        height: 500px;
       } */
+      .class-hidden {
+        display: none;
+      }
+      .display-elements {
+        display: contents;
+      }
     </style>
   </head>
 
-  <body class>
-    <header class="border border-solid border-black">
-      <div
-        class="left-side-nav flex items-center justify-between border border-solid border-red-600"
-      >
-        <a href="index.html"><img src="https://picsum.photos/150" alt="logo" /></a>
-        <ul class="flex gap-3">
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+  <body>
+    <!-- Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
+
+    <!---->
+
+    <header
+      class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
+    >
+      <div class="menu flex items-center justify-center md:hidden">
+        <span class="material-icons cursor-pointer mr-4"> menu </span>
+        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <ul
+          class="divide-y divide-white menu-dropdown font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-y hover:divide-black h-full"
+        >
+          <li class="px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./signup.html">CONT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./cart.html">COȘ DE CUMPĂRĂTURI</a>
+          </li>
         </ul>
-        <input type="search" name="search" id="search" placeholder="Search for products" />
       </div>
-      <div class="account-cart">
-        <a href=""><span class="material-icons"> person </span></a>
-        <a href=""><span class="material-icons"> local_mall </span></a>
+
+      <div class="left-side-nav items-center justify-start gap-10 w-full text-md flex">
+        <a class="hidden md:block" href="index.html"
+          ><img src="https://picsum.photos/80" alt="logo"
+        /></a>
+        <ul
+          class="font-extrabold hidden md:flex divide-x divide-white hover:divide-x hover:divide-black"
+        >
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Caută produse în site"
+          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-sm text-black p-1 pl-3"
+        />
+      </div>
+
+      <div class="account-cart hidden items-center justify-center gap-5 px-5 w-1/6 md:flex">
+        <a href="./signup.html"><span class="material-icons text-3xl"> person </span></a>
+        <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
       </div>
     </header>
+    <main>
+      <div
+        class="hero-section bg-[url('https://files.worldwildlife.org/wwfcmsprod/images/Mountains_New_Hero_Image/story_full_width/5c6n24n4pm_mountains_hero.jpg')] bg-no-repeat bg-center bg-cover text-white flex flex-col items-center justify-around gap-20"
+      >
+        <h1 class="hero-title">Produse cu mândrie în Iași</h1>
+        <button>Vezi produse</button>
+      </div>
+    </main>
   </body>
 </html>
