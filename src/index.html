@@ -8,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <title>Homepage</title>
     <style>
       body {
-        font-family: "Lato", sans-serif;
-        border: 2px solid salmon;
+        font-family: "Nunito", sans-serif;
       }
       /* .carousel {
         height: 500px;
@@ -97,7 +101,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
     </header>
     <main>
       <div
-        class="w-full bg-[url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-36 p-24"
+        class="hero-section w-full bg-[url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-36 p-24"
       >
         <h1
           class="text-black text-[1.5rem] font-black text-center mt-10 sm:text-[2.5rem] md:text-[3.5rem]"
@@ -114,12 +118,14 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
       </div>
-      <div class="main-products p-5 flex gap-8">
+      <div
+        class="main-products grid justify-items-center items-center gap-4 grid-cols-2 md:grid-cols-4 px-3 py-8 mt-7 mb-10"
+      >
         <div
-          class="card relative w-[250px] h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400"
+          class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
         >
-          <a class="w-full flex justify-center" href="./products.html"
-            ><img class="w-5/6 mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          <a class="w-full flex justify-center px-6" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
           /></a>
           <div
             class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
@@ -146,10 +152,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
         <div
-          class="card relative w-[250px] h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400"
+          class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
         >
-          <a class="w-full flex justify-center" href="./products.html"
-            ><img class="w-5/6 mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          <a class="w-full flex justify-center px-6" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
           /></a>
           <div
             class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
@@ -176,10 +182,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
         <div
-          class="card relative w-[250px] h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400"
+          class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
         >
-          <a class="w-full flex justify-center" href="./products.html"
-            ><img class="w-5/6 mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          <a class="w-full flex justify-center px-6" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
           /></a>
           <div
             class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
@@ -206,10 +212,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
         <div
-          class="card relative w-[250px] h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400"
+          class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
         >
-          <a class="w-full flex justify-center" href="./products.html"
-            ><img class="w-5/6 mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          <a class="w-full flex justify-center px-6" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
           /></a>
           <div
             class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
@@ -236,6 +242,141 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
       </div>
+      <div class="eco-recycle-business grid grid-cols-3 gap-2 text-sm font-bold mt-6 mb-20">
+        <div
+          class="organic flex justify-center items-center gap-2 p-2 text-center text-xs sm:text-base"
+        >
+          <img
+            class="w-[50px] sm:w-[100px]"
+            src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-organic-product-beauty-cosmetics-victoruler-flat-victoruler.png"
+          />
+          <p>Produse 100% organice</p>
+        </div>
+        <div
+          class="recycle flex justify-center items-center gap-2 p-2 text-center text-xs sm:text-base"
+        >
+          <img
+            class="w-[50px] sm:w-[100px]"
+            src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-recycle-ecology-icongeek26-linear-colour-icongeek26-1.png"
+          />
+          <p>Ambalaje 100% reciclabile</p>
+        </div>
+        <div
+          class="local-shop flex justify-center items-center gap-2 p-2 text-center text-xs sm:text-base"
+        >
+          <img
+            class="w-[50px] sm:w-[100px]"
+            src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-shop-sales-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png"
+          />
+          <p>Afacere 100% locala</p>
+        </div>
+      </div>
+      <div class="stupina-info grid p-10 grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="photo-info flex flex-col items-center justify-center">
+          <h2 class="photo-info-title text-xl font-extrabold m-10">Stuparul si stupina</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam consectetur quod
+            temporibus, praesentium non repudiandae nobis quo itaque hic tempore. Sunt doloribus
+            harum tempora! Quibusdam aperiam praesentium animi dignissimos eius impedit corporis ex
+            magni perferendis, sit minima provident velit ipsam. Similique incidunt, autem debitis
+            quos, a harum eveniet aspernatur sapiente vel at, commodi ex eligendi voluptas quam
+            quibusdam dolore placeat? Assumenda eos hic corrupti commodi corporis illo nesciunt
+            consectetur, ullam ad odit reiciendis eius voluptates accusamus, possimus quod inventore
+            adipisci ratione unde nihil. Natus totam ea minima dolor fugit veritatis deserunt modi
+            aspernatur dolorem doloremque unde fugiat porro provident rerum eveniet aut inventore
+            eos illo eligendi temporibus ducimus eaque, maiores amet. Eaque sapiente facilis
+            mollitia deserunt a quod odit hic pariatur, adipisci natus, quia tempore itaque ex quo
+            quisquam et magni laborum dolorum. Ipsa nostrum tempore maiores eum veritatis laborum
+            quae aperiam adipisci accusantium architecto voluptas, nam error quo illo molestias.
+            Officiis in libero cumque dicta magni unde rem laudantium nemo! Asperiores repudiandae
+            fuga sed dolorem iusto deserunt ut praesentium blanditiis, ducimus adipisci quidem,
+            porro dolor perferendis ratione? Numquam, similique.
+          </p>
+        </div>
+        <div class="img-info flex items-center justify-center">
+          <img src="https://picsum.photos/seed/picsum/400/400" class="w-full" />
+        </div>
+        <div class="img-info flex items-center justify-center">
+          <img src="https://picsum.photos/seed/picsum/400/400" class="w-full" />
+        </div>
+        <div class="photo-info flex flex-col items-center justify-center">
+          <h2 class="photo-info-title text-xl font-extrabold m-10">Stuparul si stupina</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat reiciendis corrupti,
+            dignissimos soluta mollitia dicta, libero non modi quod dolores tempora repellat unde
+            velit. Nihil accusantium iste minima excepturi libero odit. Tempore voluptatum soluta,
+            iste doloremque similique expedita accusantium saepe veniam impedit eos, quis
+            blanditiis! Enim, magni repellendus cum animi earum itaque libero aspernatur corporis
+            quidem impedit, numquam tenetur atque expedita ea praesentium at saepe, voluptatibus est
+            doloribus. Aut beatae, velit deserunt quibusdam exercitationem qui, earum porro quo
+            vitae harum provident nesciunt cumque, rerum delectus temporibus ipsa mollitia! Aliquam
+            provident eveniet harum quis officia at, totam hic neque. Ratione quaerat ducimus velit
+            quis? Ipsum cupiditate quas aperiam commodi non neque eum ullam libero minus eveniet eos
+            soluta nostrum est quis ex natus, consequuntur porro nam! Rem ipsum, consectetur fuga
+            soluta inventore mollitia ex atque labore eum, blanditiis eaque debitis? Dignissimos
+            assumenda soluta animi aperiam, voluptatem sed sint. Dolores non consequatur hic totam,
+            vero exercitationem consequuntur?
+          </p>
+        </div>
+      </div>
+      <div
+        class="subscribe-social-media bg-neutral-700 p-5 md:flex lg:flex md:items-center lg:items-center lg:justify-between md:px-14 lg:px-24 md:py-3 lg:py-5 text-white text-lg font-bold"
+      >
+        <div class="subscribe flex justify-center items-center gap-5">
+          <h2>Informatii si oferte</h2>
+          <div class="subscribtion bg-neutral-500 border border-none rounded-xl p-2">
+            <input
+              type="email"
+              placeholder="adresa de email"
+              class="bg-inherit focus:outline-none border border-none rounded-xl px-2 font-normal"
+            />
+            <button type="submit">
+              <i
+                class="ri-arrow-right-circle-line text-[1.5rem] font-semibold flex items-center"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="social-media flex justify-center items-center gap-4">
+          <h2>Urmariti-ne</h2>
+          <div class="text-[2rem] font-normal">
+            <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
+            <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+            <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="bg-neutral-800 text-white font-medium flex items-center justify-between p-6">
+      <div class="footer-store-info">
+        <ul>
+          <a href="./index.html" class="font-semibold">STUPINA SANDULEANU</a>
+          <li class="">
+            <a href="./products.html">Produse</a>
+          </li>
+          <li class="">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="">
+            <a href="./signup.html">Cont personal</a>
+          </li>
+          <li class="">
+            <a href="./cart.html">Cos de cumparaturi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="commercial-data">
+        <h2>INFORMATII COMERCIALE</h2>
+        <p>P.F.A. SANDULEANU DUMITRU</p>
+        <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
+      </div>
+      <div class="clients-support">
+        <h2>SUPORT CLIENTI</h2>
+        <p>Orar: 08:00-19:00</p>
+        <div class="flex items-center gap-2">
+          <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
