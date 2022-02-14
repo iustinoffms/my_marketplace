@@ -104,7 +104,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
         class="hero-section w-full bg-[url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-36 p-24"
       >
         <h1
-          class="text-black text-[1.5rem] font-black text-center mt-10 sm:text-[2.5rem] md:text-[3.5rem]"
+          class="text-black text-[1.5rem] font-black text-center mt-10 sm:text-[2.5rem] md:text-[3.5rem] hover:text-white ease-in duration-100"
         >
           <a href="./products.html">PRODUSE CU MÂNDRIE ÎN IAȘI</a>
         </h1>
@@ -242,7 +242,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
           >
         </div>
       </div>
-      <div class="eco-recycle-business grid grid-cols-3 gap-2 text-sm font-bold mt-6 mb-20">
+      <div class="eco-recycle-business grid grid-cols-3 gap-2 text-sm font-bold mt-6 mb-10">
         <div
           class="organic flex justify-center items-center gap-2 p-2 text-center text-xs sm:text-base"
         >
@@ -320,15 +320,17 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
       </div>
       <div
-        class="subscribe-social-media bg-neutral-700 p-5 md:flex lg:flex md:items-center lg:items-center lg:justify-between md:px-14 lg:px-24 md:py-3 lg:py-5 text-white text-lg font-bold"
+        class="subscribe-social-media bg-neutral-700 p-4 text-white text-[1.4rem] font-bold md:flex md:items-center md:justify-between md:px-10"
       >
-        <div class="subscribe flex justify-center items-center gap-5">
+        <div class="input-button-group lg:flex lg:items-center lg:gap-5 p-2">
           <h2>Informatii si oferte</h2>
-          <div class="subscribtion bg-neutral-500 border border-none rounded-xl p-2">
+          <div
+            class="subscribtion-container bg-neutral-500 border-none rounded-xl p-2 flex items-center justify-between gap-2"
+          >
             <input
               type="email"
               placeholder="adresa de email"
-              class="bg-inherit focus:outline-none border border-none rounded-xl px-2 font-normal"
+              class="bg-inherit focus:outline-none border-none rounded-xl px-2 font-normal"
             />
             <button type="submit">
               <i
@@ -337,9 +339,9 @@ xl	1280px	@media (min-width: 1280px) { ... }
             </button>
           </div>
         </div>
-        <div class="social-media flex justify-center items-center gap-4">
+        <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
           <h2>Urmariti-ne</h2>
-          <div class="text-[2rem] font-normal">
+          <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
             <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
             <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
             <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
@@ -347,10 +349,10 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
       </div>
     </main>
-    <footer class="bg-neutral-800 text-white font-medium flex items-center justify-between p-6">
-      <div class="footer-store-info">
+    <footer class="bg-neutral-800 text-white font-medium grid grid-cols-1 gap-5 sm:grid-cols-3 p-4">
+      <div class="footer-store-info text-center">
         <ul>
-          <a href="./index.html" class="font-semibold">STUPINA SANDULEANU</a>
+          <a href="./index.html" class="text-lg font-bold">STUPINA SANDULEANU</a>
           <li class="">
             <a href="./products.html">Produse</a>
           </li>
@@ -365,13 +367,13 @@ xl	1280px	@media (min-width: 1280px) { ... }
           </li>
         </ul>
       </div>
-      <div class="commercial-data">
-        <h2>INFORMATII COMERCIALE</h2>
+      <div class="commercial-data text-center">
+        <h2 class="text-lg font-bold">INFORMATII COMERCIALE</h2>
         <p>P.F.A. SANDULEANU DUMITRU</p>
         <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
       </div>
-      <div class="clients-support">
-        <h2>SUPORT CLIENTI</h2>
+      <div class="clients-support flex flex-col items-center">
+        <h2 class="text-lg font-bold">SUPORT CLIENTI</h2>
         <p>Orar: 08:00-19:00</p>
         <div class="flex items-center gap-2">
           <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
