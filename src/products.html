@@ -4,9 +4,230 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Homepage</title>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      /* .carousel {
+        height: 500px;
+      } */
+      .class-hidden {
+        display: none;
+      }
+      .display-elements {
+        display: contents;
+      }
+    </style>
   </head>
-  <body>
-    <h1>PRODUCTS</h1>
+
+  <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
+    <!-- Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
+
+    <!---->
+
+    <header
+      class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
+    >
+      <div class="menu flex items-center justify-center md:hidden">
+        <span class="material-icons cursor-pointer mr-4"> menu </span>
+        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <ul
+          class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
+        >
+          <li class="px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./signup.html">CONT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./cart.html">COȘ DE CUMPĂRĂTURI</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="left-side-nav items-center justify-start gap-10 w-full text-md flex">
+        <a class="hidden md:block" href="index.html"
+          ><img src="https://picsum.photos/80" alt="logo"
+        /></a>
+        <ul
+          class="font-extrabold hidden md:flex divide-x divide-white hover:divide-x hover:divide-black"
+        >
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Caută produse în site"
+          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-sm text-black p-1 pl-3"
+        />
+      </div>
+
+      <div class="account-cart hidden items-center justify-center gap-5 px-5 w-1/6 md:flex">
+        <a href="./signup.html"><span class="material-icons text-3xl"> person </span></a>
+        <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
+      </div>
+    </header>
+    <div
+      class="filter-sort flex bg-slate-400 justify-between items-center text-lg font-bold px-6 py-3"
+    >
+      <div class="filter">filter</div>
+      <div class="sort">sort</div>
+    </div>
+    <div
+      class="main-products grid justify-items-center items-center gap-4 grid-cols-2 md:grid-cols-4 px-3 py-8 mt-7 mb-10"
+    >
+      <div
+        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+      >
+        <a class="w-full flex justify-center px-6" href="./products.html"
+          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+        /></a>
+        <div
+          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+        >
+          <p class="text-[10px] text-center">Produs local</p>
+        </div>
+        <div class="card-info flex flex-col items-center">
+          <h3 class="card-product-title font-black py-1">
+            <a href="./products.html">MIERE DE SALCÂM</a>
+          </h3>
+          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+        </div>
+        <a class="w-full" href="./cart.html"
+          ><div
+            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+          >
+            <span class="material-icons">
+              <span class="material-icons-outlined text-white text-2xl">
+                shopping_cart
+              </span> </span
+            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+          </div></a
+        >
+      </div>
+      <div
+        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+      >
+        <a class="w-full flex justify-center px-6" href="./products.html"
+          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+        /></a>
+        <div
+          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+        >
+          <p class="text-[10px] text-center">Produs local</p>
+        </div>
+        <div class="card-info flex flex-col items-center">
+          <h3 class="card-product-title font-black py-1">
+            <a href="./products.html">MIERE DE SALCÂM</a>
+          </h3>
+          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+        </div>
+        <a class="w-full" href="./cart.html"
+          ><div
+            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+          >
+            <span class="material-icons">
+              <span class="material-icons-outlined text-white text-2xl">
+                shopping_cart
+              </span> </span
+            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+          </div></a
+        >
+      </div>
+      <div
+        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+      >
+        <a class="w-full flex justify-center px-6" href="./products.html"
+          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+        /></a>
+        <div
+          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+        >
+          <p class="text-[10px] text-center">Produs local</p>
+        </div>
+        <div class="card-info flex flex-col items-center">
+          <h3 class="card-product-title font-black py-1">
+            <a href="./products.html">MIERE DE SALCÂM</a>
+          </h3>
+          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+        </div>
+        <a class="w-full" href="./cart.html"
+          ><div
+            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+          >
+            <span class="material-icons">
+              <span class="material-icons-outlined text-white text-2xl">
+                shopping_cart
+              </span> </span
+            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+          </div></a
+        >
+      </div>
+      <div
+        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+      >
+        <a class="w-full flex justify-center px-6" href="./products.html"
+          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+        /></a>
+        <div
+          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+        >
+          <p class="text-[10px] text-center">Produs local</p>
+        </div>
+        <div class="card-info flex flex-col items-center">
+          <h3 class="card-product-title font-black py-1">
+            <a href="./products.html">MIERE DE SALCÂM</a>
+          </h3>
+          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+        </div>
+        <a class="w-full" href="./cart.html"
+          ><div
+            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+          >
+            <span class="material-icons">
+              <span class="material-icons-outlined text-white text-2xl">
+                shopping_cart
+              </span> </span
+            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+          </div></a
+        >
+      </div>
+    </div>
   </body>
 </html>
