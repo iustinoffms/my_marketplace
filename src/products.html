@@ -38,15 +38,6 @@
   </head>
 
   <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
-    <!-- Breakpoint prefix	Minimum width	CSS
-sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
-2xl	1536px	@media (min-width: 1536px) { ... } -->
-
-    <!---->
-
     <header
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
@@ -99,135 +90,301 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
       </div>
     </header>
-    <div
-      class="filter-sort flex bg-slate-400 justify-between items-center text-lg font-bold px-6 py-3"
-    >
-      <div class="filter">filter</div>
-      <div class="sort">sort</div>
-    </div>
-    <div
-      class="main-products grid justify-items-center items-center gap-4 grid-cols-2 md:grid-cols-4 px-3 py-8 mt-7 mb-10"
-    >
+
+    <main>
       <div
-        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+        class="filter-sort-bar flex flex-col bg-neutral-500 text-white font-semibold text-lg sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-5 gap-3 p-5"
       >
-        <a class="w-full flex justify-center px-6" href="./products.html"
-          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
-        /></a>
-        <div
-          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
-        >
-          <p class="text-[10px] text-center">Produs local</p>
-        </div>
-        <div class="card-info flex flex-col items-center">
-          <h3 class="card-product-title font-black py-1">
-            <a href="./products.html">MIERE DE SALCÂM</a>
-          </h3>
-          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
-          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
-        </div>
-        <a class="w-full" href="./cart.html"
-          ><div
-            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+        <div class="product-filter flex flex-col flex-1">
+          <label for="product-filter">Tip miere:</label>
+          <select
+            name="product-filter"
+            id="product-filter"
+            class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
           >
-            <span class="material-icons">
-              <span class="material-icons-outlined text-white text-2xl">
-                shopping_cart
-              </span> </span
-            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
-          </div></a
-        >
+            <option value="salcam">Miere de Salcam</option>
+            <option value="tei">Miere de Tei</option>
+            <option value="poliflora">Miere Poliflora</option>
+            <option value="mana">Miere de Mana</option>
+            <option value="floarea-soarelui">Miere de Floarea Soarelui</option>
+            <option value="salcioara">Miere de Salcioara</option>
+            <option value="polen">Polen</option>
+          </select>
+        </div>
+
+        <div class="price-range flex flex-col flex-1">
+          <label for="price-range">Inverval pret:</label>
+          <select
+            name="price-range"
+            id="price-range"
+            class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
+          >
+            <option value="0-to-50">0 - 20 RON</option>
+            <option value="tei">20 - 50 RON</option>
+            <option value="poliflora">50 - 100 RON</option>
+            <option value="poliflora">100 RON <</option>
+          </select>
+        </div>
+
+        <div class="sort-container flex flex-col flex-1">
+          <label for="sort">Ordoneaza dupa:</label>
+          <select
+            name="sort"
+            id="sort"
+            class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
+          >
+            <option value="price-up">Pret crescator</option>
+            <option value="price-down">Pret descrescator</option>
+            <option value="quantity-up">Cantitate crescatoare</option>
+            <option value="quantity-down">Cantitate descrescatoare</option>
+          </select>
+        </div>
       </div>
       <div
-        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+        class="main-products grid justify-items-center items-center gap-x-2 gap-y-12 grid-cols-1 py-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
-        <a class="w-full flex justify-center px-6" href="./products.html"
-          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
-        /></a>
         <div
-          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
         >
-          <p class="text-[10px] text-center">Produs local</p>
-        </div>
-        <div class="card-info flex flex-col items-center">
-          <h3 class="card-product-title font-black py-1">
-            <a href="./products.html">MIERE DE SALCÂM</a>
-          </h3>
-          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
-          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
-        </div>
-        <a class="w-full" href="./cart.html"
-          ><div
-            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
           >
-            <span class="material-icons">
-              <span class="material-icons-outlined text-white text-2xl">
-                shopping_cart
-              </span> </span
-            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
-          </div></a
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
+        <div
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
         >
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
+          >
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
+        <div
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
+        >
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
+          >
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
+        <div
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
+        >
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
+          >
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
+        <div
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
+        >
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
+          >
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
+        <div
+          class="card relative flex flex-col items-center gap-2 rounded-md bg-white shadow-md shadow-zinc-400 hover:shadow-lg hover:shadow-zinc-500 hover:ease-in duration-100"
+        >
+          <a class="w-full flex justify-center px-8" href="./products.html"
+            ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+          /></a>
+          <div
+            class="produs-local bg-amber-400 rounded-full w-[55px] h-[55px] flex items-center justify-center absolute top-0 left-0 m-2"
+          >
+            <p class="text-[12px] text-center">Produs local</p>
+          </div>
+          <div class="card-info flex flex-col items-center">
+            <h3 class="card-product-title font-black py-1">
+              <a href="./products.html">MIERE DE SALCÂM</a>
+            </h3>
+            <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+            <p class="text-amber-400 font-black py-2 text-lg">32 RON</p>
+          </div>
+          <a class="w-full" href="./cart.html"
+            ><div
+              class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+            >
+              <span class="material-icons">
+                <span class="material-icons-outlined text-white text-2xl">
+                  shopping_cart
+                </span> </span
+              ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+            </div></a
+          >
+        </div>
       </div>
       <div
-        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+        class="subscribe-social-media bg-neutral-700 p-4 text-white text-[1.4rem] font-bold md:flex md:items-center md:justify-between md:px-10"
       >
-        <a class="w-full flex justify-center px-6" href="./products.html"
-          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
-        /></a>
-        <div
-          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
-        >
-          <p class="text-[10px] text-center">Produs local</p>
-        </div>
-        <div class="card-info flex flex-col items-center">
-          <h3 class="card-product-title font-black py-1">
-            <a href="./products.html">MIERE DE SALCÂM</a>
-          </h3>
-          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
-          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
-        </div>
-        <a class="w-full" href="./cart.html"
-          ><div
-            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+        <div class="input-button-group lg:flex lg:items-center lg:gap-5 p-2">
+          <h2>Informatii si oferte</h2>
+          <div
+            class="subscribtion-container bg-neutral-500 border-none rounded-xl p-2 flex items-center justify-between gap-2"
           >
-            <span class="material-icons">
-              <span class="material-icons-outlined text-white text-2xl">
-                shopping_cart
-              </span> </span
-            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
-          </div></a
-        >
-      </div>
-      <div
-        class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
-      >
-        <a class="w-full flex justify-center px-6" href="./products.html"
-          ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
-        /></a>
-        <div
-          class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
-        >
-          <p class="text-[10px] text-center">Produs local</p>
+            <input
+              type="email"
+              placeholder="adresa de email"
+              class="bg-inherit focus:outline-none border-none rounded-xl px-2 font-normal"
+            />
+            <button type="submit">
+              <i
+                class="ri-arrow-right-circle-line text-[1.5rem] font-semibold flex items-center"
+              ></i>
+            </button>
+          </div>
         </div>
-        <div class="card-info flex flex-col items-center">
-          <h3 class="card-product-title font-black py-1">
-            <a href="./products.html">MIERE DE SALCÂM</a>
-          </h3>
-          <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
-          <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+        <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
+          <h2>Urmariti-ne</h2>
+          <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
+            <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
+            <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+            <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+          </div>
         </div>
-        <a class="w-full" href="./cart.html"
-          ><div
-            class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
-          >
-            <span class="material-icons">
-              <span class="material-icons-outlined text-white text-2xl">
-                shopping_cart
-              </span> </span
-            ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
-          </div></a
-        >
       </div>
-    </div>
+    </main>
+
+    <footer class="bg-neutral-800 text-white font-medium grid grid-cols-1 gap-5 sm:grid-cols-3 p-4">
+      <div class="footer-store-info text-center">
+        <ul>
+          <a href="./index.html" class="text-lg font-bold">STUPINA SANDULEANU</a>
+          <li class="">
+            <a href="./products.html">Produse</a>
+          </li>
+          <li class="">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="">
+            <a href="./signup.html">Cont personal</a>
+          </li>
+          <li class="">
+            <a href="./cart.html">Cos de cumparaturi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="commercial-data text-center">
+        <h2 class="text-lg font-bold">INFORMATII COMERCIALE</h2>
+        <p>P.F.A. SANDULEANU DUMITRU</p>
+        <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
+      </div>
+      <div class="clients-support flex flex-col items-center">
+        <h2 class="text-lg font-bold">SUPORT CLIENTI</h2>
+        <p>Orar: 08:00-19:00</p>
+        <div class="flex items-center gap-2">
+          <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

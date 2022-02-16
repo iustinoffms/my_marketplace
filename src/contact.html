@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <title>Homepage</title>
+    <title>Contact</title>
     <style>
       body {
         font-family: "Nunito", sans-serif;
@@ -38,15 +38,6 @@
   </head>
 
   <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
-    <!-- Breakpoint prefix	Minimum width	CSS
-sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
-2xl	1536px	@media (min-width: 1536px) { ... } -->
-
-    <!---->
-
     <header
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
@@ -99,5 +90,191 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
       </div>
     </header>
+
+    <main class="grid px-20 py-16">
+      <div class="contact-form text-[1.1rem] font-semibold">
+        <div class="text-[2rem] font-bold">
+          <h3 class="title">Contacteaza-ne</h3>
+          <hr />
+        </div>
+
+        <p>
+          Scrie-ne un mesaj si in cel mai scurt timp vei fi contactat deunul din membrii echipei
+          noastre.
+        </p>
+
+        <form method="post">
+          <div class="flex flex-col mb-6">
+            <label for="email"> Email* </label>
+            <input id="email" type="email" name="email" value="" required />
+          </div>
+
+          <div class="flex flex-col mb-6">
+            <label for=""> Nume* </label>
+            <input type="text" name="lastname" value="" />
+          </div>
+
+          <div class="flex flex-col mb-6">
+            <label for=""> Telefon* </label>
+            <input type="text" name="phone" value="" />
+          </div>
+          <div class="flex flex-col mb-6">
+            <label for=""> Mesajul tau* </label>
+            <textarea name="message"></textarea>
+          </div>
+          <p class="register-terms">
+            <label class="-g-agreement-PersonalInformation"
+              ><input
+                type="checkbox"
+                name="agreePersonalInformation"
+                value="2291c782c8f98f174f224a9f466cf045"
+              />
+              Sunt de acord cu prelucrarea datelor personale conform
+              <a
+                href="javascript:void(0);"
+                onclick="$.Gomag.openPopupWithData('#info-btn', {iframe : {css : {width : '600px'}}, src: 'https://www.delaguraderai.com/politica-de-confidentialitate?type=popup'});"
+                class="-g-agreement-link"
+                >Politicii de Confidentialitate</a
+              >
+              a magazinului</label
+            >
+          </p>
+          <input type="hidden" value="0" name="confirm" id="confirm" />
+
+          <div class="c-row send">
+            <label for=""> &nbsp; </label>
+            <input type="submit" value="trimite mesaj" id="sendMessage" class="btn std" />
+          </div>
+        </form>
+        <!-- end contact-formular -->
+      </div>
+      <div class="business-social-info">
+        <div class="contact-information col-sm-5 pull-right">
+          <div class="title-box line-r">
+            <h3 class="title">S.C. DELAGURADERAI SRL</h3>
+            <hr />
+          </div>
+
+          <ul class="info-list -g-company-data">
+            <li>
+              <strong>Cod Fiscal: </strong>
+              <span>43075503</span>
+            </li>
+            <li>
+              <strong>Nr. Reg. Com:</strong>
+              <span>J12/2937/21.09.2020</span>
+            </li>
+            <li class="-g-company-office" data-block="contactCompanyAddress">
+              <strong>Sediu Social:</strong>
+              <span>Strada Paris, nr 102, Cluj-Napoca, Cluj</span>
+            </li>
+            <li>
+              <strong>Cont Bancar:</strong>
+              <span>RO69INGB0000999910652985</span>
+            </li>
+            <li>
+              <strong>Banca:</strong>
+              <span>Banca ING Bank sucursala Cluj-Napoca</span>
+            </li>
+          </ul>
+
+          <div class="title-box line-r under">
+            <h3 class="title">Contact</h3>
+            <hr />
+          </div>
+
+          <ul class="info-list -g-company-contact">
+            <li>
+              <strong>Email: </strong>
+              <span>
+                <a
+                  href="mailto:hello@delaguraderai.com"
+                  data-contact="bWFpbHRvOmhlbGxvQGRlbGFndXJhZGVyYWkuY29t"
+                  >hell&#111;&#x40;dela&#103;ur&#x61;d&#101;rai&#x2e;&#99;&#x6f;m</a
+                >
+              </span>
+            </li>
+            <li style="display: none" class="contactPhone" data-block="contactPhone">
+              <strong>Telefon:</strong>
+              <span>
+                <a href="tel:"></a>
+                <div class="clear"></div>
+              </span>
+            </li>
+
+            <li class="-g-company-address">
+              <strong>Adresa:</strong>
+              <span>Strada Paris Nr. 102, Cluj-Napoca, Cluj</span>
+            </li>
+          </ul>
+          <div class="title-box line-r under">
+            <h3 class="title">Suport clienti</h3>
+            <hr />
+          </div>
+
+          <ul class="info-list -g-company-schedule">
+            <li>Orar: 09:00-17:00</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div
+      class="subscribe-social-media bg-neutral-700 p-4 text-white text-[1.4rem] font-bold md:flex md:items-center md:justify-between md:px-10"
+    >
+      <div class="input-button-group lg:flex lg:items-center lg:gap-5 p-2">
+        <h2>Informatii si oferte</h2>
+        <div
+          class="subscribtion-container bg-neutral-500 border-none rounded-xl p-2 flex items-center justify-between gap-2"
+        >
+          <input
+            type="email"
+            placeholder="adresa de email"
+            class="bg-inherit focus:outline-none border-none rounded-xl px-2 font-normal"
+          />
+          <button type="submit">
+            <i class="ri-arrow-right-circle-line text-[1.5rem] font-semibold flex items-center"></i>
+          </button>
+        </div>
+      </div>
+      <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
+        <h2>Urmariti-ne</h2>
+        <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
+          <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-neutral-800 text-white font-medium grid grid-cols-1 gap-5 sm:grid-cols-3 p-4">
+      <div class="footer-store-info text-center">
+        <ul>
+          <a href="./index.html" class="text-lg font-bold">STUPINA SANDULEANU</a>
+          <li class="">
+            <a href="./products.html">Produse</a>
+          </li>
+          <li class="">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="">
+            <a href="./signup.html">Cont personal</a>
+          </li>
+          <li class="">
+            <a href="./cart.html">Cos de cumparaturi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="commercial-data text-center">
+        <h2 class="text-lg font-bold">INFORMATII COMERCIALE</h2>
+        <p>P.F.A. SANDULEANU DUMITRU</p>
+        <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
+      </div>
+      <div class="clients-support flex flex-col items-center">
+        <h2 class="text-lg font-bold">SUPORT CLIENTI</h2>
+        <p>Orar: 08:00-19:00</p>
+        <div class="flex items-center gap-2">
+          <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
