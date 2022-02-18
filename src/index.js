@@ -101,11 +101,32 @@
 //   }
 // }
 
-var x = 1;
-function fn() {
-  x = 2;
+// var x = 1;
+// function fn() {
+//   x = 2;
+// }
+
+// fn();
+
+// console.log(x);
+
+//ori aici ori in local storage.
+
+//products js.
+
+const container = document.getElementById("homepage-products");
+renderProducts(container, listOfProducts, 4);
+
+let cart = [
+  { id: "aea2813d-7040-495e-8565-d275f5451295", quantity: 1 },
+  { id: "b47f9952-a648-4393-8cde-2e4560d319ef", quantity: 3 },
+];
+
+function renderCartItems(cartItems) {
+  for (let item of cartItems) {
+    const product = listOfProducts.find((x) => x.id === item.id);
+    console.log({ product, item });
+  }
 }
 
-fn();
-
-console.log(x);
+renderCartItems(cart);
