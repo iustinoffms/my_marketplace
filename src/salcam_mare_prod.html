@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Homepage</title>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      /* .carousel {
+        height: 500px;
+      } */
+      .class-hidden {
+        display: none;
+      }
+      .display-elements {
+        display: contents;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
+    <header
+      class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
+    >
+      <div class="menu flex items-center justify-center md:hidden">
+        <span class="material-icons cursor-pointer mr-4"> menu </span>
+        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <ul
+          class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
+        >
+          <li class="px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./signup.html">CONT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./cart.html">COȘ DE CUMPĂRĂTURI</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="left-side-nav items-center justify-start gap-10 w-full text-md flex">
+        <a class="hidden md:block" href="index.html"
+          ><img src="https://picsum.photos/80" alt="logo"
+        /></a>
+        <ul
+          class="font-extrabold hidden md:flex divide-x divide-white hover:divide-x hover:divide-black"
+        >
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Caută produse în site"
+          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-sm text-black p-1 pl-3"
+        />
+      </div>
+
+      <div class="account-cart hidden items-center justify-center gap-5 px-5 w-1/6 md:flex">
+        <a href="./signup.html"><span class="material-icons text-3xl"> person </span></a>
+        <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
+      </div>
+    </header>
+    <main>
+      <div class="back-to-products inline-block mt-3">
+        <a
+          href="./products.html"
+          class="flex items-center p-2 hover:font-bold ease-in duration-75 text-zinc-400 hover:text-black"
+        >
+          <span class="material-icons"> arrow_back_ios </span>
+
+          <button>Inapoi la produse</button>
+        </a>
+      </div>
+      <div class="product-wrapper p-10 grid md:grid-cols-2 md:p-10 md:gap-10">
+        <div class="prod-image flex justify-center">
+          <img src="https://picsum.photos/300/400/" alt="borcan cu miere" class="5/6" />
+        </div>
+        <div
+          class="prod-details-description-section flex flex-col justify-between md:flex md:flex-col md:gap-10"
+        >
+          <div
+            class="prod-details flex flex-col items-center py-8 md:flex md:flex-col md:items-start md:p-2"
+          >
+            <h2
+              class="card-product-title font-extrabold py-1 text-[1.3rem] ease-in duration-75 md:text-[2rem]"
+            >
+              MIERE DE SALCÂM
+            </h2>
+
+            <p class="text-sm text-zinc-400 md:text-[1rem]">500g</p>
+
+            <p class="text-amber-400 font-black py-2 text-[1.2rem] md:text-[1.5rem]">32 RON</p>
+
+            <div class="button-and-counter flex items-center gap-5 mt-10">
+              <div
+                class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex gap-2 justify-between px-2 py-1.5 rounded-sm"
+              >
+                <span class="material-icons">
+                  <span class="material-icons-outlined text-white text-2xl">
+                    shopping_cart
+                  </span> </span
+                ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+              </div>
+              <div class="counter border border-solid border-zinc-400 flex">
+                <button
+                  class="border border-solid border-zinc-400 p-2 w-[30px] flex items-center justify-center text-zinc-500"
+                >
+                  <span class="material-icons"> remove </span>
+                </button>
+                <input
+                  type="text"
+                  name="quantity"
+                  placeholder="1"
+                  disabled
+                  class="border border-solid border-zinc-400 p-2 w-[50px] focus:outline-none text-center"
+                />
+                <button
+                  class="border border-solid border-zinc-400 p-2 w-[30px] flex items-center justify-center"
+                >
+                  <span class="material-icons"> add </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="prod-description p-2">
+            <div class="description-title mb-6">
+              <h2>Descriere produs</h2>
+              <hr />
+            </div>
+
+            <p class="mb-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium, et
+              debitis praesentium dolores dolor, minus officiis eligendi, veritatis nostrum minima
+              dicta quaerat aliquam eum magnam tempore magni doloribus. Quidem pariatur distinctio
+              dolor sunt ratione quaerat asperiores, in ut laboriosam, itaque nemo provident dolorem
+              vero maxime eligendi numquam sapiente necessitatibus.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="similar-products px-2 py-4 mt-[6rem] mb-10">
+        <div class="similar-products-title text-center mb-6">
+          <h2 class="uppercase text-[1.2rem] font-bold">Produse similare</h2>
+          <hr />
+        </div>
+        <div
+          class="main-products grid justify-items-center items-center gap-4 grid-cols-2 md:grid-cols-4"
+        >
+          <div
+            class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+          >
+            <a class="w-full flex justify-center px-6" href="./products.html"
+              ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+            /></a>
+            <div
+              class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+            >
+              <p class="text-[10px] text-center">Produs local</p>
+            </div>
+            <div class="card-info flex flex-col items-center">
+              <h3 class="card-product-title font-black py-1">
+                <a href="./products.html">MIERE DE SALCÂM</a>
+              </h3>
+              <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+              <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+            </div>
+            <a class="w-full" href="./cart.html"
+              ><div
+                class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+              >
+                <span class="material-icons">
+                  <span class="material-icons-outlined text-white text-2xl">
+                    shopping_cart
+                  </span> </span
+                ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+              </div></a
+            >
+          </div>
+          <div
+            class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+          >
+            <a class="w-full flex justify-center px-6" href="./products.html"
+              ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+            /></a>
+            <div
+              class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+            >
+              <p class="text-[10px] text-center">Produs local</p>
+            </div>
+            <div class="card-info flex flex-col items-center">
+              <h3 class="card-product-title font-black py-1">
+                <a href="./products.html">MIERE DE SALCÂM</a>
+              </h3>
+              <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+              <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+            </div>
+            <a class="w-full" href="./cart.html"
+              ><div
+                class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+              >
+                <span class="material-icons">
+                  <span class="material-icons-outlined text-white text-2xl">
+                    shopping_cart
+                  </span> </span
+                ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+              </div></a
+            >
+          </div>
+          <div
+            class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+          >
+            <a class="w-full flex justify-center px-6" href="./products.html"
+              ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+            /></a>
+            <div
+              class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+            >
+              <p class="text-[10px] text-center">Produs local</p>
+            </div>
+            <div class="card-info flex flex-col items-center">
+              <h3 class="card-product-title font-black py-1">
+                <a href="./products.html">MIERE DE SALCÂM</a>
+              </h3>
+              <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+              <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+            </div>
+            <a class="w-full" href="./cart.html"
+              ><div
+                class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+              >
+                <span class="material-icons">
+                  <span class="material-icons-outlined text-white text-2xl">
+                    shopping_cart
+                  </span> </span
+                ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+              </div></a
+            >
+          </div>
+          <div
+            class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
+          >
+            <a class="w-full flex justify-center px-6" href="./products.html"
+              ><img class="w-full mt-4" src="https://picsum.photos/200/300" alt="miere de albine"
+            /></a>
+            <div
+              class="produs-local bg-amber-400 rounded-full w-[50px] h-[50px] flex items-center justify-center absolute top-0 left-0 m-2"
+            >
+              <p class="text-[10px] text-center">Produs local</p>
+            </div>
+            <div class="card-info flex flex-col items-center">
+              <h3 class="card-product-title font-black py-1">
+                <a href="./products.html">MIERE DE SALCÂM</a>
+              </h3>
+              <p class="text-sm text-zinc-400">Cantitate regăsită în vas, 500g</p>
+              <p class="text-amber-400 font-black py-2 text-lg">50 RON</p>
+            </div>
+            <a class="w-full" href="./cart.html"
+              ><div
+                class="add-to-cart bg-amber-400 text-center hover:bg-amber-500 flex justify-between px-2 py-3 rounded-b-md"
+              >
+                <span class="material-icons">
+                  <span class="material-icons-outlined text-white text-2xl">
+                    shopping_cart
+                  </span> </span
+                ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="subscribe-social-media bg-neutral-700 p-4 text-white text-[1.4rem] font-bold md:flex md:items-center md:justify-between md:px-10"
+    >
+      <div class="input-button-group lg:flex lg:items-center lg:gap-5 p-2">
+        <h2>Informatii si oferte</h2>
+        <div
+          class="subscribtion-container bg-neutral-500 border-none rounded-xl p-2 flex items-center justify-between gap-2"
+        >
+          <input
+            type="email"
+            placeholder="adresa de email"
+            class="bg-inherit focus:outline-none border-none rounded-xl px-2 font-normal"
+          />
+          <button type="submit">
+            <i class="ri-arrow-right-circle-line text-[1.5rem] font-semibold flex items-center"></i>
+          </button>
+        </div>
+      </div>
+      <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
+        <h2>Urmariti-ne</h2>
+        <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
+          <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-neutral-800 text-white font-medium grid grid-cols-1 gap-5 sm:grid-cols-3 p-4">
+      <div class="footer-store-info text-center">
+        <ul>
+          <a href="./index.html" class="text-lg font-bold">STUPINA SANDULEANU</a>
+          <li class="">
+            <a href="./products.html">Produse</a>
+          </li>
+          <li class="">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="">
+            <a href="./signup.html">Cont personal</a>
+          </li>
+          <li class="">
+            <a href="./cart.html">Cos de cumparaturi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="commercial-data text-center">
+        <h2 class="text-lg font-bold">INFORMATII COMERCIALE</h2>
+        <p>P.F.A. SANDULEANU DUMITRU</p>
+        <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
+      </div>
+      <div class="clients-support flex flex-col items-center">
+        <h2 class="text-lg font-bold">SUPORT CLIENTI</h2>
+        <p>Orar: 08:00-19:00</p>
+        <div class="flex items-center gap-2">
+          <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,9 +4,233 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Homepage</title>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+      }
+      /* .carousel {
+        height: 500px;
+      } */
+      .class-hidden {
+        display: none;
+      }
+      .display-elements {
+        display: contents;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Here is your order</h1>
+
+  <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
+    <!-- Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } -->
+
+    <!---->
+
+    <header
+      class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
+    >
+      <div class="menu flex items-center justify-center md:hidden">
+        <span class="material-icons cursor-pointer mr-4"> menu </span>
+        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <ul
+          class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
+        >
+          <li class="px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./signup.html">CONT</a>
+          </li>
+          <li class="px-4 flex items-center justify-center">
+            <a href="./cart.html">COȘ DE CUMPĂRĂTURI</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="left-side-nav items-center justify-start gap-10 w-full text-md flex">
+        <a class="hidden md:block" href="index.html"
+          ><img src="https://picsum.photos/80" alt="logo"
+        /></a>
+        <ul
+          class="font-extrabold hidden md:flex divide-x divide-white hover:divide-x hover:divide-black"
+        >
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./products.html">PRODUSE</a>
+          </li>
+          <li class="h-full px-4 flex items-center justify-center">
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Caută produse în site"
+          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-sm text-black p-1 pl-3"
+        />
+      </div>
+
+      <div class="account-cart hidden items-center justify-center gap-5 px-5 w-1/6 md:flex">
+        <a href="./signup.html"><span class="material-icons text-3xl"> person </span></a>
+        <a href="./cart.html"><span class="material-icons text-3xl"> local_mall </span></a>
+      </div>
+    </header>
+    <div class="cart">
+      <h1 class="py-4 text-center text-[2rem] font-bold uppercase text-neutral-700 cursor-pointer">
+        Cos de cumparaturi
+      </h1>
+    </div>
+    <main class="p-2 sm:p-10 md:p-20">
+      <div class="order-wrapper grid grid-cols-1 gap-2 border-2 border-solid mb-8">
+        <div
+          class="order-header grid grid-cols-3 justify-items-center bg-slate-200 py-1 items-center"
+        >
+          <p>PRODUSE</p>
+          <p>CANTITATE</p>
+          <p>PRET</p>
+        </div>
+        <ul
+          class="grid grid-cols-3 gap-2 justify-items-center p-2 border-b border-solid border-slate-200"
+        >
+          <li
+            class="selected-product flex flex-col-reverse items-center gap-1 sm:flex sm:flex-row sm:items-center"
+          >
+            <div class="selected-product-image-container w-[70px] h-auto">
+              <img src="https://picsum.photos/200/300" class="w-full" />
+            </div>
+            <h2 class="text-center">Miere de Salcam</h2>
+          </li>
+          <li class="quantity flex items-center">
+            <div class="counter border border-solid border-zinc-400 flex">
+              <button
+                class="border border-solid border-zinc-400 w-[25px] flex items-center justify-center text-zinc-500"
+              >
+                <span class="material-icons text-sm"> remove </span>
+              </button>
+              <input
+                type="text"
+                name="quantity"
+                placeholder="1"
+                disabled
+                class="border border-solid border-zinc-400 w-[40px] focus:outline-none text-center"
+              />
+              <button
+                class="border border-solid border-zinc-400 w-[25px] flex items-center justify-center"
+              >
+                <span class="material-icons text-sm"> add </span>
+              </button>
+            </div>
+          </li>
+          <li class="price flex items-center">
+            <p class="text-center font-semibold">32 RON</p>
+          </li>
+        </ul>
+      </div>
+      <div class="price-calculation-grid-container md:flex md:items-center md:justify-end">
+        <div
+          class="price-calculation grid grid-cols-3 gap-y-2 justify-items-center border-b border-solid border-slate-200 mb-10 md:w-[50%]"
+        >
+          <p>Subtotal</p>
+          <p></p>
+          <p class="">x RON</p>
+          <p>Transport</p>
+          <p></p>
+          <p>15 RON</p>
+          <p>TOTAL</p>
+          <p></p>
+          <p>x RON</p>
+        </div>
+      </div>
+
+      <div class="send-orred-btn-container flex items-center justify-end">
+        <button
+          class="rounded px-8 py-3 bg-neutral-700 text-white text-sm hover:bg-neutral-500 hover:shadow-2xl shadow-xl hover:ease-in duration-100 font-bold mb-10 cursor-pointer"
+        >
+          FINALIZEAZA COMANDA
+        </button>
+      </div>
+    </main>
+    <div
+      class="subscribe-social-media bg-neutral-700 p-4 text-white text-[1.4rem] font-bold md:flex md:items-center md:justify-between md:px-10"
+    >
+      <div class="input-button-group lg:flex lg:items-center lg:gap-5 p-2">
+        <h2>Informatii si oferte</h2>
+        <div
+          class="subscribtion-container bg-neutral-500 border-none rounded-xl p-2 flex items-center justify-between gap-2"
+        >
+          <input
+            type="email"
+            placeholder="adresa de email"
+            class="bg-inherit focus:outline-none border-none rounded-xl px-2 font-normal"
+          />
+          <button type="submit">
+            <i class="ri-arrow-right-circle-line text-[1.5rem] font-semibold flex items-center"></i>
+          </button>
+        </div>
+      </div>
+      <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
+        <h2>Urmariti-ne</h2>
+        <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
+          <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+          <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-neutral-800 text-white font-medium grid grid-cols-1 gap-5 sm:grid-cols-3 p-4">
+      <div class="footer-store-info text-center">
+        <ul>
+          <a href="./index.html" class="text-lg font-bold">STUPINA SANDULEANU</a>
+          <li class="">
+            <a href="./products.html">Produse</a>
+          </li>
+          <li class="">
+            <a href="./contact.html">Contact</a>
+          </li>
+          <li class="">
+            <a href="./signup.html">Cont personal</a>
+          </li>
+          <li class="">
+            <a href="./cart.html">Cos de cumparaturi</a>
+          </li>
+        </ul>
+      </div>
+      <div class="commercial-data text-center">
+        <h2 class="text-lg font-bold">INFORMATII COMERCIALE</h2>
+        <p>P.F.A. SANDULEANU DUMITRU</p>
+        <p>IASI, sat. RUSENII VECHI comuna HOLBOCA, str. Vantului nr. 15</p>
+      </div>
+      <div class="clients-support flex flex-col items-center">
+        <h2 class="text-lg font-bold">SUPORT CLIENTI</h2>
+        <p>Orar: 08:00-19:00</p>
+        <div class="flex items-center gap-2">
+          <i class="ri-mail-line"></i><span> hello@stupinasanduleanu.ro</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

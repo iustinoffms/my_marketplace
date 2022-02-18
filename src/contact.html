@@ -91,38 +91,65 @@
       </div>
     </header>
 
-    <main class="grid px-20 py-16">
+    <main class="grid px-20 py-16 md:grid md:grid-cols-2 md:gap-10 md:px-8 lg:px-20">
       <div class="contact-form text-[1.1rem] font-semibold">
-        <div class="text-[2rem] font-bold">
-          <h3 class="title">Contacteaza-ne</h3>
+        <div class="text-[1.2rem] font-bold mb-10">
+          <h3 class="title">CONTACTEAZA-NE</h3>
           <hr />
         </div>
 
-        <p>
+        <p class="mb-6 text-neutral-700 text-base font-normal">
           Scrie-ne un mesaj si in cel mai scurt timp vei fi contactat deunul din membrii echipei
           noastre.
         </p>
 
         <form method="post">
           <div class="flex flex-col mb-6">
-            <label for="email"> Email* </label>
-            <input id="email" type="email" name="email" value="" required />
+            <label for="email" class="cursor-pointer"> Email* </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value=""
+              required
+              class="border border-solid border-black focus:outline-none px-0.5"
+            />
           </div>
 
           <div class="flex flex-col mb-6">
-            <label for=""> Nume* </label>
-            <input type="text" name="lastname" value="" />
+            <label for="name" class="cursor-pointer"> Nume* </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value=""
+              required
+              class="border border-solid border-black focus:outline-none px-0.5"
+            />
           </div>
 
           <div class="flex flex-col mb-6">
-            <label for=""> Telefon* </label>
-            <input type="text" name="phone" value="" />
+            <label for="phone" class="cursor-pointer"> Telefon* </label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              value=""
+              required
+              class="border border-solid border-black focus:outline-none px-0.5"
+            />
           </div>
           <div class="flex flex-col mb-6">
-            <label for=""> Mesajul tau* </label>
-            <textarea name="message"></textarea>
+            <label for="message"> Mesajul tau* </label>
+            <textarea
+              id="message"
+              name="message"
+              class="border border-solid border-black focus:outline-none px-0.5 text-sm"
+              rows="6"
+              required
+            ></textarea>
           </div>
-          <p class="register-terms">
+          <!-- <p class="register-terms">
             <label class="-g-agreement-PersonalInformation"
               ><input
                 type="checkbox"
@@ -139,81 +166,80 @@
               a magazinului</label
             >
           </p>
-          <input type="hidden" value="0" name="confirm" id="confirm" />
+          <input type="hidden" value="0" name="confirm" id="confirm" /> -->
 
           <div class="c-row send">
-            <label for=""> &nbsp; </label>
-            <input type="submit" value="trimite mesaj" id="sendMessage" class="btn std" />
+            <label for="sendMessage"></label>
+            <input
+              type="submit"
+              value="TRIMITE MESAJ"
+              id="sendMessage"
+              class="rounded px-8 py-2 bg-neutral-700 text-white text-sm hover:bg-neutral-500 hover:shadow-2xl shadow-xl hover:ease-in duration-100 font-bold mb-10 cursor-pointer"
+            />
           </div>
         </form>
         <!-- end contact-formular -->
       </div>
-      <div class="business-social-info">
+      <div class="business-info text-[1.1rem] font-semibold">
         <div class="contact-information col-sm-5 pull-right">
-          <div class="title-box line-r">
-            <h3 class="title">S.C. DELAGURADERAI SRL</h3>
+          <div class="title-box text-[1.2rem] font-bold mb-10">
+            <h3>SANDULEANU M. DUMITRU P.F.A.</h3>
             <hr />
           </div>
 
-          <ul class="info-list -g-company-data">
+          <ul class="info-list mb-10">
             <li>
-              <strong>Cod Fiscal: </strong>
-              <span>43075503</span>
+              Cod Fiscal:
+              <span>11347057</span>
             </li>
-            <li>
-              <strong>Nr. Reg. Com:</strong>
+            <!-- <li>
+             Nr. Reg. Com:
               <span>J12/2937/21.09.2020</span>
-            </li>
-            <li class="-g-company-office" data-block="contactCompanyAddress">
-              <strong>Sediu Social:</strong>
-              <span>Strada Paris, nr 102, Cluj-Napoca, Cluj</span>
+            </li> -->
+            <li>
+              Sediu Social:
+              <span>Strada Vantului, nr. 15, Iasi, sat Rusenii Vechi, com. Holboca</span>
             </li>
             <li>
-              <strong>Cont Bancar:</strong>
-              <span>RO69INGB0000999910652985</span>
+              Cont Bancar:
+              <span>RO69INGB0000999910611111</span>
             </li>
             <li>
-              <strong>Banca:</strong>
-              <span>Banca ING Bank sucursala Cluj-Napoca</span>
+              Banca:
+              <span> ING Bank sucursala Iasi</span>
             </li>
           </ul>
 
-          <div class="title-box line-r under">
+          <div class="mb-6">
             <h3 class="title">Contact</h3>
             <hr />
           </div>
 
-          <ul class="info-list -g-company-contact">
+          <ul class="info-list mb-10">
             <li>
-              <strong>Email: </strong>
-              <span>
-                <a
-                  href="mailto:hello@delaguraderai.com"
-                  data-contact="bWFpbHRvOmhlbGxvQGRlbGFndXJhZGVyYWkuY29t"
-                  >hell&#111;&#x40;dela&#103;ur&#x61;d&#101;rai&#x2e;&#99;&#x6f;m</a
-                >
-              </span>
+              Email:
+              <span> hello@stupinasanduleanu.ro </span>
             </li>
-            <li style="display: none" class="contactPhone" data-block="contactPhone">
-              <strong>Telefon:</strong>
+            <!-- <li style="display: none" class="contactPhone" data-block="contactPhone">
+              Telefon:
               <span>
                 <a href="tel:"></a>
                 <div class="clear"></div>
               </span>
-            </li>
+            </li> -->
 
-            <li class="-g-company-address">
-              <strong>Adresa:</strong>
-              <span>Strada Paris Nr. 102, Cluj-Napoca, Cluj</span>
+            <li>
+              Adresa:
+              <span>Strada Vantului, nr. 15, Iasi, sat Rusenii Vechi, com. Holboca</span>
             </li>
           </ul>
-          <div class="title-box line-r under">
-            <h3 class="title">Suport clienti</h3>
+          <div class="mb-6">
+            <h3>Suport clienti</h3>
             <hr />
           </div>
 
-          <ul class="info-list -g-company-schedule">
-            <li>Orar: 09:00-17:00</li>
+          <ul class="info-list mb-10">
+            <li>Orar: 08:00-19:00</li>
           </ul>
         </div>
       </div>
