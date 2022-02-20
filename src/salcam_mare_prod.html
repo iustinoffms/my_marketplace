@@ -42,9 +42,12 @@
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
       <div class="menu flex items-center justify-center md:hidden">
-        <span class="material-icons cursor-pointer mr-4"> menu </span>
-        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <span id="menu-btn" class="material-icons cursor-pointer mr-4"> menu </span>
+        <span id="close-menu-btn" class="material-icons cursor-pointer mr-4 class-hidden">
+          close
+        </span>
         <ul
+          id="menu-dropdown"
           class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
         >
           <li class="px-4 flex items-center justify-center">
@@ -175,9 +178,10 @@
           <hr />
         </div>
         <div
+          id="similar-products"
           class="main-products grid justify-items-center items-center gap-4 grid-cols-2 md:grid-cols-4"
         >
-          <div
+          <!-- <div
             class="card relative h-full flex flex-col items-center gap-2 rounded-md bg-white shadow-xl shadow-zinc-400 hover:shadow-2xl hover:shadow-zinc-700 hover:ease-in duration-100"
           >
             <a class="w-full flex justify-center px-6" href="./products.html"
@@ -296,7 +300,7 @@
                 ><button class="btn text-white flex-1 text-center text-base">Adauga in Cos</button>
               </div></a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
@@ -358,5 +362,7 @@
         </div>
       </div>
     </footer>
+    <script src="products_catalog.js"></script>
+    <script src="salcam_mare.js"></script>
   </body>
 </html>

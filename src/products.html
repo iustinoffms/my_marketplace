@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <title>Homepage</title>
+    <title>Products</title>
     <style>
       body {
         font-family: "Nunito", sans-serif;
@@ -42,9 +42,12 @@
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
       <div class="menu flex items-center justify-center md:hidden">
-        <span class="material-icons cursor-pointer mr-4"> menu </span>
-        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <span id="menu-btn" class="material-icons cursor-pointer mr-4"> menu </span>
+        <span id="close-menu-btn" class="material-icons cursor-pointer mr-4 class-hidden">
+          close
+        </span>
         <ul
+          id="menu-dropdown"
           class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
         >
           <li class="px-4 flex items-center justify-center">
@@ -93,7 +96,7 @@
 
     <main>
       <div
-        class="filter-sort-bar flex flex-col bg-neutral-500 text-white font-semibold text-lg sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-5 gap-3 p-5"
+        class="filter-sort-bar flex flex-col bg-neutral-500 text-white font-semibold text-lg sm:flex sm:flex-row sm:items-center sm:justify-between sm:gap-5 gap-3 px-5 py-2"
       >
         <div class="product-filter flex flex-col flex-1">
           <label for="product-filter">Tip miere:</label>
@@ -102,8 +105,9 @@
             id="product-filter"
             class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
           >
-            <option value="salcam">Miere de Salcam</option>
-            <option value="tei">Miere de Tei</option>
+            <option id="all" value="all">Toate produsele</option>
+            <option id="miere-salcam" value="salcam">Miere de Salcam</option>
+            <option id="miere-tei" value="tei">Miere de Tei</option>
             <option value="poliflora">Miere Poliflora</option>
             <option value="mana">Miere de Mana</option>
             <option value="floarea-soarelui">Miere de Floarea Soarelui</option>
@@ -119,10 +123,11 @@
             id="price-range"
             class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
           >
-            <option value="0-to-50">0 - 20 RON</option>
-            <option value="tei">20 - 50 RON</option>
-            <option value="poliflora">50 - 100 RON</option>
-            <option value="poliflora">100 RON <</option>
+            <option value="all">Toate preturile</option>
+            <option value="0-to-20">0 - 20 RON</option>
+            <option value="20-to-50">20 - 50 RON</option>
+            <option value="50-to-100">50 - 100 RON</option>
+            <option value="100+">100 RON <</option>
           </select>
         </div>
 
@@ -133,10 +138,11 @@
             id="sort"
             class="text-neutral-500 focus:outline-none border-none rounded-sm p-1 text-base font-normal cursor-pointer"
           >
-            <option value="price-up">Pret crescator</option>
-            <option value="price-down">Pret descrescator</option>
-            <option value="quantity-up">Cantitate crescatoare</option>
-            <option value="quantity-down">Cantitate descrescatoare</option>
+            <option value="all">Ordoneaza</option>
+            <option value="small-to-big">Pret crescator</option>
+            <option value="big-to-small">Pret descrescator</option>
+            <!-- <option value="quantity-up">Cantitate crescatoare</option>
+            <option value="quantity-down">Cantitate descrescatoare</option> -->
           </select>
         </div>
       </div>

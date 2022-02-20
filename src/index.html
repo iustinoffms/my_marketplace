@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -23,7 +23,7 @@
     <title>Homepage</title>
     <style>
       body {
-        font-family: "Nunito", sans-serif;
+        font-family: "Lato", sans-serif;
       }
       /* .carousel {
         height: 500px;
@@ -37,43 +37,66 @@
     </style>
   </head>
 
-  <body class="bg-gradient-to-r from-slate-100 bg-slate-50">
-    <!-- Breakpoint prefix	Minimum width	CSS
-sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
-2xl	1536px	@media (min-width: 1536px) { ... } -->
-
-    <!---->
-
+  <body id="body" class="bg-gradient-to-r from-slate-100 bg-slate-50">
     <header
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
       <div class="menu flex items-center justify-center md:hidden">
-        <span class="material-icons cursor-pointer mr-4"> menu </span>
-        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
-        <ul
-          class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
+        <span id="menu-btn" class="material-icons cursor-pointer mr-4 text-[2rem]"> menu </span>
+        <span
+          id="close-menu-btn"
+          class="material-icons cursor-pointer mr-4 text-[2rem] class-hidden"
         >
-          <li class="px-4 flex items-center justify-center">
-            <a href="./products.html">PRODUSE</a>
-          </li>
-          <li class="px-4 flex items-center justify-center">
-            <a href="./contact.html">CONTACT</a>
-          </li>
-          <li class="px-4 flex items-center justify-center">
-            <a href="./signup.html">CONT</a>
-          </li>
-          <li class="px-4 flex items-center justify-center">
-            <a href="./cart.html">COȘ DE CUMPĂRĂTURI</a>
-          </li>
+          close
+        </span>
+        <ul
+          id="menu-dropdown"
+          class="menu-dropdown font-extrabold absolute left-0 top-[60px] bg-neutral-700 hover:bg-white hover:ease-in duration-150 class-hidden"
+        >
+          <a href="./index.html">
+            <li
+              class="px-4 p-2 flex items-center justify-center border-b border-solid border-white"
+            >
+              ACASA
+            </li></a
+          >
+          <a href="./products.html">
+            <li
+              class="px-4 p-2 flex items-center justify-center border-b border-solid border-white"
+            >
+              PRODUSE
+            </li></a
+          >
+          <a href="./contact.html">
+            <li
+              class="px-4 p-2 flex items-center justify-center border-b border-solid border-white"
+            >
+              CONTACT
+            </li></a
+          >
+          <a href="./signup.html">
+            <li
+              class="px-4 p-2 flex items-center justify-center border-b border-solid border-white"
+            >
+              CONT
+            </li></a
+          >
+          <a href="./cart.js">
+            <li
+              class="px-4 p-2 flex items-center justify-center border-b border-solid border-white"
+            >
+              COȘ DE CUMPĂRĂTURI
+            </li></a
+          >
         </ul>
       </div>
 
       <div class="left-side-nav items-center justify-start gap-10 w-full text-md flex">
         <a class="hidden md:block" href="index.html"
-          ><img src="https://picsum.photos/80" alt="logo"
+          ><img
+            src="https://scalebranding.com/wp-content/uploads/2021/04/Bee-Logo-4.jpg"
+            class="w-[110px]"
+            alt="logo"
         /></a>
         <ul
           class="font-extrabold hidden md:flex divide-x divide-white hover:divide-x hover:divide-black"
@@ -90,7 +113,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
           name="search"
           id="search"
           placeholder="Caută produse în site"
-          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-sm text-black p-1 pl-3"
+          class="w-full border-2 border-solid border-neutral-700 focus:outline-none rounded-2xl flex items-center text-md text-black py-2 pl-3"
         />
       </div>
 
@@ -104,14 +127,14 @@ xl	1280px	@media (min-width: 1280px) { ... }
         class="hero-section w-full bg-[url('https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png')] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-36 p-24"
       >
         <h1
-          class="text-black text-[1.5rem] font-black text-center mt-10 sm:text-[2.5rem] md:text-[3.5rem] hover:text-white ease-in duration-100"
+          class="text-neutral-700 border border-solid border-red-500 min-w-[300px] text-[1.8rem] font-black text-center sm:text-[3.2rem] md:text-[3.5rem] hover:text-neutral-700 ease-in duration-100"
         >
-          <a href="./products.html">PRODUSE CU MÂNDRIE ÎN IAȘI</a>
+          <a href="./products.html">PRODUSE CU MANDRIE IN IASI</a>
         </h1>
         <div class="btn-container h-20 w-40 flex items-center justify-center">
           <a href="./products.html"
             ><button
-              class="hero-action-btn rounded px-8 py-3 bg-neutral-700 text-white text-sm hover:bg-white hover:text-black hover:shadow-2xl shadow-xl hover:ease-in duration-100 font-bold mb-10"
+              class="hero-action-btn rounded px-8 py-3 bg-neutral-700 text-white text-md hover:bg-white hover:text-black hover:shadow-2xl shadow-xl hover:ease-in duration-100 font-bold mb-10"
             >
               Vezi produse
             </button></a
@@ -153,49 +176,52 @@ xl	1280px	@media (min-width: 1280px) { ... }
       </div>
       <div class="stupina-info grid p-10 grid-cols-1 md:grid-cols-2 md:grid gap-5">
         <div class="photo-info flex flex-col items-center justify-center">
-          <h2 class="photo-info-title text-xl font-extrabold m-10">Stuparul si stupina</h2>
+          <h2 class="photo-info-title text-xl font-extrabold m-10">Mierea si istoria ei</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam consectetur quod
-            temporibus, praesentium non repudiandae nobis quo itaque hic tempore. Sunt doloribus
-            harum tempora! Quibusdam aperiam praesentium animi dignissimos eius impedit corporis ex
-            magni perferendis, sit minima provident velit ipsam. Similique incidunt, autem debitis
-            quos, a harum eveniet aspernatur sapiente vel at, commodi ex eligendi voluptas quam
-            quibusdam dolore placeat? Assumenda eos hic corrupti commodi corporis illo nesciunt
-            consectetur, ullam ad odit reiciendis eius voluptates accusamus, possimus quod inventore
-            adipisci ratione unde nihil. Natus totam ea minima dolor fugit veritatis deserunt modi
-            aspernatur dolorem doloremque unde fugiat porro provident rerum eveniet aut inventore
-            eos illo eligendi temporibus ducimus eaque, maiores amet. Eaque sapiente facilis
-            mollitia deserunt a quod odit hic pariatur, adipisci natus, quia tempore itaque ex quo
-            quisquam et magni laborum dolorum. Ipsa nostrum tempore maiores eum veritatis laborum
-            quae aperiam adipisci accusantium architecto voluptas, nam error quo illo molestias.
-            Officiis in libero cumque dicta magni unde rem laudantium nemo! Asperiores repudiandae
-            fuga sed dolorem iusto deserunt ut praesentium blanditiis, ducimus adipisci quidem,
-            porro dolor perferendis ratione? Numquam, similique.
+            Mierea de albine a fost prima substanță dulce folosită de om, fiind prețuită în special
+            de preoți în cadrul diverselor ritualuri. Există suficiente mărturii că în civilizațiile
+            antice mierea era folosită, printre altele, la prepararea unei băuturi alcoolice la care
+            se adăuga polen și levuri din faguri, însă, cele mai vechi documente referitoare la
+            miere sunt două fragmente scrise în limba sumeriană. De la egipteni au rămas mărturii
+            privind modul de recoltare și folosire a mierii. Babilonienii și diferitele civilizații
+            străvechi din India și China, utilizau mierea atât ca medicament cât și la ritualuri și
+            ceremonii. În Vechiul Testament găsim scris "miere" de peste 60 ori. În Grecia antică
+            s-a scris mult despre producerea de miere. Hipocrate recomanda mierea pentru vindecarea
+            unor afecțiuni (gastrointestinale, renale, respiratorii) și pentru tratamentul plăgilor.
+            Dioscoride, autorul unei cărți în cinci volume, „De Materia Medica”, trata plăgile
+            fistulizate folosind mierea în aplicații locale. Pliniu indica mierea în asociere cu
+            untură de pește la tratarea rănilor infectate. Musulmanii foloseau mierea ca un leac bun
+            pentru orice boală. Folosirea mierii în alimentație (ca hrană, băutură, conservant), în
+            medicină, în ritualurile religioase a fost în continuă creștere până la descoperirea
+            zahărului din trestie și sfeclă. În anul 1871 a fost descoperită invertaza, (o enzimă
+            care grăbește conversia zahărului în glucoză și fructoză).
           </p>
         </div>
         <div class="img-info flex items-center justify-center">
-          <img src="https://picsum.photos/seed/picsum/400/400" class="w-full" />
+          <img
+            src="https://picsum.photos/seed/picsum/400/400"
+            class="w-5/6 border-none rounded-xl"
+          />
         </div>
         <div class="img-info flex items-center justify-center">
-          <img src="https://picsum.photos/seed/picsum/400/400" class="w-full" />
+          <img
+            src="https://picsum.photos/seed/picsum/400/400"
+            class="w-5/6 border-none rounded-xl"
+          />
         </div>
         <div class="photo-info flex flex-col items-center justify-center">
-          <h2 class="photo-info-title text-xl font-extrabold m-10">Stuparul si stupina</h2>
+          <h2 class="photo-info-title text-xl font-extrabold m-10">
+            Proprietati ale mierii de albine
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat reiciendis corrupti,
-            dignissimos soluta mollitia dicta, libero non modi quod dolores tempora repellat unde
-            velit. Nihil accusantium iste minima excepturi libero odit. Tempore voluptatum soluta,
-            iste doloremque similique expedita accusantium saepe veniam impedit eos, quis
-            blanditiis! Enim, magni repellendus cum animi earum itaque libero aspernatur corporis
-            quidem impedit, numquam tenetur atque expedita ea praesentium at saepe, voluptatibus est
-            doloribus. Aut beatae, velit deserunt quibusdam exercitationem qui, earum porro quo
-            vitae harum provident nesciunt cumque, rerum delectus temporibus ipsa mollitia! Aliquam
-            provident eveniet harum quis officia at, totam hic neque. Ratione quaerat ducimus velit
-            quis? Ipsum cupiditate quas aperiam commodi non neque eum ullam libero minus eveniet eos
-            soluta nostrum est quis ex natus, consequuntur porro nam! Rem ipsum, consectetur fuga
-            soluta inventore mollitia ex atque labore eum, blanditiis eaque debitis? Dignissimos
-            assumenda soluta animi aperiam, voluptatem sed sint. Dolores non consequatur hic totam,
-            vero exercitationem consequuntur?
+            Mierea este un aliment cu gust dulce și parfumat, cu aspect semifluid, vâscos sau
+            cristalizat și culoare specifică, având un conținut mare de zaharuri și substanțe
+            minerale, vitamine, enzime, acizi organici. Culoarea. În raport cu substanțele colorate
+            care se găsesc în nectar și care sunt pigmenți vegetali-caroten, clorofilă, xantofilă-
+            culoarea mierii diferă de la incolor până la neagră. La mierea de nectar predomină
+            culoarea galbenă. Mierea strânsă la începutul primăverii are o culoare de un galben viu,
+            până la portocaliu. Cu timpul, mierea își pierde culoarea inițială, de obicei se închide
+            la culoare, iar în timpul cristalizării se deschide.
           </p>
         </div>
       </div>
@@ -222,9 +248,15 @@ xl	1280px	@media (min-width: 1280px) { ... }
         <div class="social-media-container flex items-center gap-5 p-2 md:flex-col lg:flex-row">
           <h2>Urmariti-ne</h2>
           <div class="text-[2.2rem] font-normal md:flex md:px-4 gap-3">
-            <a href="#"><i class="ri-facebook-circle-line hover:text-amber-400"></i></a>
-            <a href="#"><i class="ri-instagram-line hover:text-amber-400"></i></a>
-            <a href="#"><i class="ri-youtube-line hover:text-amber-400"></i></a>
+            <a
+              href="https://www.facebook.com/Stupina-S%C4%83nduleanu-114570363598568/"
+              target="_blank"
+              ><i class="ri-facebook-circle-line hover:text-amber-400"></i
+            ></a>
+            <a href="#" target="_blank"><i class="ri-instagram-line hover:text-amber-400"></i></a>
+            <a href="https://www.youtube.com/watch?v=q9eVzHkRHsk" target="_blank"
+              ><i class="ri-youtube-line hover:text-amber-400"></i
+            ></a>
           </div>
         </div>
       </div>

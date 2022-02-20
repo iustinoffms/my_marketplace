@@ -51,9 +51,12 @@ xl	1280px	@media (min-width: 1280px) { ... }
       class="bg-neutral-700 hover:bg-white hover:text-black hover:ease-in duration-150 flex items-center justify-between text-zinc-50 border-b p-2 relative"
     >
       <div class="menu flex items-center justify-center md:hidden">
-        <span class="material-icons cursor-pointer mr-4"> menu </span>
-        <span class="material-icons cursor-pointer mr-4 class-hidden"> close </span>
+        <span id="menu-btn" class="material-icons cursor-pointer mr-4"> menu </span>
+        <span id="close-menu-btn" class="material-icons cursor-pointer mr-4 class-hidden">
+          close
+        </span>
         <ul
+          id="menu-dropdown"
           class="menu-dropdown divide-y divide-white font-extrabold absolute left-0 top-[50px] bg-neutral-700 hover:bg-white hover:divide-x hover:divide-black hover:ease-in duration-150 class-hidden"
         >
           <li class="px-4 flex items-center justify-center">
@@ -232,5 +235,6 @@ xl	1280px	@media (min-width: 1280px) { ... }
         </div>
       </div>
     </footer>
+    <script src="cart.js"></script>
   </body>
 </html>
