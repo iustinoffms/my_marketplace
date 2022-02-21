@@ -43,6 +43,7 @@ xl	1280px	@media (min-width: 1280px) { ... }
       </div>
       <div class="form-container">
         <form>
+          <p id="error-message"></p>
           <div class="input-group my-1.5 py-2">
             <label for="name">Nume si prenume </label>
             <div class="name-input">
@@ -50,47 +51,50 @@ xl	1280px	@media (min-width: 1280px) { ... }
                 type="text"
                 id="name"
                 placeholder="Sanduleanu Iustin"
+                value=""
                 class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
               />
             </div>
           </div>
           <div class="input-group my-1.5 py-2">
-            <label for="mail">Email</label>
+            <label id="mail-label" for="mail">Email</label>
+            <span id="display-message"></span>
             <div class="mail-input">
               <input
                 type="email"
                 id="mail"
                 placeholder="nume@mail.com"
                 class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
-                required
               />
             </div>
           </div>
           <div class="input-group my-1.5 py-2">
-            <label for="pass">Parola</label>
+            <label id="pass-label" for="pass">Parola</label>
+            <span id="pass-error"></span>
             <div class="pass-input">
               <input
                 type="password"
                 id="pass"
                 placeholder="Minim 6 caractere"
                 class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
-                required
               />
             </div>
           </div>
           <div class="input-group my-1.5 py-2">
-            <label for="confirm-pass">Confirmare parola</label>
+            <label id="confirm-pass-label" for="confirm-pass">Confirmare parola</label>
+            <span id="confirm-pass-error-message"></span>
             <div class="confirm-pass-input">
               <input
                 type="password"
                 id="confirm-pass"
                 class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
-                reuqired
               />
             </div>
           </div>
           <div class="button">
             <button
+              href=""
+              id="create-account"
               type="submit"
               class="border-none rounded bg-sky-400 w-full p-3 text-white hover:bg-sky-500 hover:shadow-2xl shadow-xl text-lg my-0.5"
             >
@@ -98,10 +102,11 @@ xl	1280px	@media (min-width: 1280px) { ... }
             </button>
           </div>
         </form>
-        <div class="back-to-site">
+        <div class="back-to-site mt-2">
           <a href="./index.html">Inapoi in site</a>
         </div>
       </div>
     </div>
+    <script src="signup.js"></script>
   </body>
 </html>

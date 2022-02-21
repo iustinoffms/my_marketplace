@@ -17,60 +17,61 @@
     <title>Login</title>
   </head>
 
-  <body>
-    <body class="p-5 flex items-center justify-center bg-gradient-to-r from-slate-100 bg-slate-50">
-      <div
-        class="container w-full p-12 shadow-lg rounded-md bg-white sm:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5"
-      >
-        <div class="sign-up-title my-2">
-          <h1 class="text-3xl font-bold my-2">Intra in cont</h1>
-          <p class="my-2">
-            Nu ai cont?
-            <span class="text-blue-600 visited:text-purple-600"
-              ><a href="./signup.html"> Creaza cont</a></span
-            >
-          </p>
-        </div>
-        <div class="form-container">
-          <form>
-            <div class="input-group my-2 py-2">
-              <label for="mail"></label>
-              <div class="mail-input">
-                <input
-                  type="email"
-                  id="mail"
-                  placeholder="Adresa de email"
-                  class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
-                  required
-                />
-              </div>
+  <body class="p-5 flex items-center justify-center bg-gradient-to-r from-slate-100 bg-slate-50">
+    <div
+      class="container w-full p-12 shadow-lg rounded-md bg-white sm:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5"
+    >
+      <div class="sign-up-title my-2">
+        <h1 class="text-3xl font-bold my-2">Intra in cont</h1>
+        <p class="my-2">
+          Nu ai cont?
+          <span class="text-blue-600 visited:text-purple-600"
+            ><a href="./signup.html"> Creaza cont</a></span
+          >
+        </p>
+      </div>
+      <div class="form-container">
+        <form>
+          <span id="error-message"></span>
+          <div class="input-group my-2 py-2">
+            <label for="mail"></label>
+            <div class="mail-input">
+              <input
+                type="email"
+                id="mail"
+                placeholder="Adresa de email"
+                class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
+                required
+              />
             </div>
-            <div class="input-group my-2 py-2">
-              <label for="pass"></label>
-              <div class="pass-input">
-                <input
-                  type="password"
-                  id="pass"
-                  placeholder="Parola"
-                  class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
-                  required
-                />
-              </div>
-            </div>
-            <div class="button">
-              <button
-                type="submit"
-                class="border-none rounded bg-sky-400 w-full p-5 text-white hover:bg-sky-500 hover:shadow-2xl shadow-xl text-lg my-1.5"
-              >
-                Intra
-              </button>
-            </div>
-          </form>
-          <div class="back-to-site">
-            <a href="./index.html">Inapoi la site</a>
           </div>
+          <div class="input-group my-2 py-2">
+            <label for="pass"></label>
+            <div class="pass-input">
+              <input
+                type="password"
+                id="pass"
+                placeholder="Parola"
+                class="border border-solid border-slate-500 rounded w-full p-2 outline-none text-lg"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <button
+              href=""
+              type="submit"
+              class="border-none rounded bg-sky-400 w-full p-3 text-white hover:bg-sky-500 hover:shadow-2xl shadow-xl text-lg my-1.5"
+            >
+              Intra
+            </button>
+          </div>
+        </form>
+        <div class="back-to-site">
+          <a href="./index.html">Inapoi la site</a>
         </div>
       </div>
-    </body>
+    </div>
+    <script src="login.js"></script>
   </body>
 </html>

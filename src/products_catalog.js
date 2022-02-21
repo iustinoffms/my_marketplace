@@ -13,6 +13,7 @@ let listOfProducts = [
     gramaj: "1000g",
     pret: 21,
     img: "https://picsum.photos/200/300",
+    link: "./poliflora_mare.html",
   },
   {
     id: "264b4aa5-ca60-45c1-afe7-dc38f35e6693",
@@ -20,6 +21,7 @@ let listOfProducts = [
     gramaj: "1000g",
     pret: 20,
     img: "https://picsum.photos/200/300",
+    link: "./tei_mare.html",
   },
   {
     id: "9b4bc0b0-e1ff-49ed-9423-27a2457c49e5",
@@ -27,6 +29,7 @@ let listOfProducts = [
     gramaj: "1000g",
     pret: 30,
     img: "https://picsum.photos/200/300",
+    link: "./mana_mare.html",
   },
   {
     id: "b47f9952-a648-4393-8cde-2e4560d319ef",
@@ -34,6 +37,7 @@ let listOfProducts = [
     gramaj: "1000g",
     pret: 20,
     img: "https://picsum.photos/200/300",
+    link: "./floarea_soarelui_mare.html",
   },
   {
     id: "3ac434f0-eb3f-4350-b591-8859deaec804",
@@ -41,6 +45,7 @@ let listOfProducts = [
     gramaj: "1000g",
     pret: 28,
     img: "https://picsum.photos/200/300",
+    link: "./salcioara_mare.html",
   },
   {
     id: "37dff93a-5d63-4259-9a5f-d37f955edf75",
@@ -48,6 +53,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 18,
     img: "https://picsum.photos/200/300",
+    link: "./salcam_mare_prod.html",
   },
   {
     id: "aea2813d-7040-495e-8565-d275f5451295",
@@ -55,6 +61,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 11,
     img: "https://picsum.photos/200/300",
+    link: "./poliflora_mare.html",
   },
   {
     id: "415069c4-1812-40ad-a61c-371257152ff0",
@@ -62,6 +69,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 11,
     img: "https://picsum.photos/200/300",
+    link: "./tei_mare.html",
   },
   {
     id: "1ca10cc7-018d-45b2-8d51-7adb4f3a1d9f",
@@ -69,6 +77,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 16,
     img: "https://picsum.photos/200/300",
+    link: "./mana_mare.html",
   },
   {
     id: "d8a205df-5deb-43be-9aa2-31963664278a",
@@ -76,6 +85,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 11,
     img: "https://picsum.photos/200/300",
+    link: "./floarea_soarelui_mare.html",
   },
   {
     id: "cd138b45-a083-4986-8507-1dbdd26a4d13",
@@ -83,6 +93,7 @@ let listOfProducts = [
     gramaj: "500g",
     pret: 15,
     img: "https://picsum.photos/200/300",
+    link: "./salcioara_mare.html",
   },
 ];
 
